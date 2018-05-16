@@ -1,0 +1,70 @@
+:root {
+        --colNum: 16;
+        --squareSize: 30Px;
+}
+
+
+body {
+    margin-top: 0Px; 
+    padding: 0Px;
+    background-color: lightblue;
+}
+.wrapper {
+
+}
+
+/** {box-sizing: border-box}*/
+
+.grid-container {
+    display: grid;
+    padding: 10px; /* make room for a border */
+    background-color: blue; /* border */
+    grid-template-columns: repeat(var(--colNum), var(--squareSize));
+    grid-auto-rows: var(--squareSize); 
+    width: 480Px;
+    height: 480Px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(0, 0, 0, 1);
+  padding: 0px;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+    margin-top: 5Px;
+}
+
+#btnContainer {
+    text-align: center;
+}
+
+#btn1 {
+    padding: 20Px;
+    margin-bottom: 10Px;
+    /*float: left;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#btn2 {
+    padding: 20Px;
+    margin-bottom: 10Px;
+    margin-left: 50Px;
+}
+
+#btn3 {
+    padding: 20Px;
+    margin-bottom: 10Px;
+    margin-left: 50Px;
+}
+
+.filled {
+    background-color: rgba(1, 1, 1, 1 );
+    /* option to use this but chose to change background just in javascript */
+}
+
